@@ -22,6 +22,9 @@ Este arquivo contém uma única linha, contendo as seis dezenas sorteadas.
 * Arquivo resultado.txt: arquivo de saída, com os dados da apuração do sorteio realizado.
 Este arquivo contém o nome completo de cada apostador, quantas e quais dezenas ele acertou.
 
+### Pré-requisitos  ###
+* NetBeans IDE 8.1
+
 ## Testes de saída do programa  ##
 Veja os exemplos abaixo, e teste o seu programa para que produza o arquivo ilustrado mais adiante.
 
