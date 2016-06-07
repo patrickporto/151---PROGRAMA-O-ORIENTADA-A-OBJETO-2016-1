@@ -5,9 +5,12 @@ package megasena;
  *
  * @authors: APENAS NO ARQUIVO Megasena.java!!!!!
  * 
- * Nome completo 1: xxx
+ * Nome completo 1: Patrick da Silveira Porto
  * Nome completo 2: xxx
  * Nome completo 3: xxx
+ * Nome completo 4: xxx
+ * Nome completo 5: xxx
+ * Nome completo 6: xxx
  * ...
  */
 public class Megasena {
