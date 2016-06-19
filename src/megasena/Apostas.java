@@ -3,11 +3,13 @@ package megasena;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.HashMap;
 
 /*
  * A classe Apostas encapsula o conjunto de todas apostas registradas.
  */
 public class Apostas {
+    private HashMap<String, Apostador> apostas = new HashMap<>();
     /*
      *  Construtor
      */
@@ -16,9 +18,9 @@ public class Apostas {
             FileReader arq = new FileReader(nomeArqApostas);
             BufferedReader lerArq = new BufferedReader(arq);
             String linha = lerArq.readLine();
-            while (linha != null) {;
+            while (linha != null) {
                 Apostador apostador = cadApostadores.getApostador(linha.substring(0, 11));
-                apostador.setAposta(linha.substring(12).split(" "));
+                this.apostas.put(linha.substring(12), apostador);
                 linha = lerArq.readLine();
             }
         } catch (Exception e) {

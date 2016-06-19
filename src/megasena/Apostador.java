@@ -13,7 +13,6 @@ package megasena;
 public class Apostador {
     private String nome;
     private String cpf;
-    private String[] aposta;
     
     /**
      * @return the nome
@@ -41,20 +40,6 @@ public class Apostador {
      */
     public void setCPF(String cpf) {
         this.cpf = cpf;
-    }
-
-    /**
-     * @return the aposta
-     */
-    public String[] getAposta() {
-        return aposta;
-    }
-
-    /**
-     * @param aposta the aposta to set
-     */
-    public void setAposta(String[] aposta) {
-        this.aposta = aposta;
     }
     
     @Override
