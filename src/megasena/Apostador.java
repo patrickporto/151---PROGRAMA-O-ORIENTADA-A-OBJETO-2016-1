@@ -30,14 +30,14 @@ public class Apostador {
     /**
      * @return the cpf
      */
-    public String getCpf() {
+    public String getCPF() {
         return cpf;
     }
 
     /**
      * @param cpf the cpf to set
      */
-    public void setCpf(String cpf) {
+    public void setCPF(String cpf) {
         this.cpf = cpf;
     }
     
