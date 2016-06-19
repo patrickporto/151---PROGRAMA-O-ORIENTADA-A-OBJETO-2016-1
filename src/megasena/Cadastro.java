@@ -29,4 +29,8 @@ public class Cadastro {
             System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
         }
     }
+    
+    public Apostador getApostador(String cpf) {
+        return this.apostadores.get(cpf);
+    }
 }
