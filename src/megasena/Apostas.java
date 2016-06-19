@@ -3,6 +3,7 @@ package megasena;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 
 /*
@@ -25,7 +26,7 @@ public class Apostas {
                 this.apostas.put(aposta, apostador);
                 linha = lerArq.readLine();
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
         }
     }

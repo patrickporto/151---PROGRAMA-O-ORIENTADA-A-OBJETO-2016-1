@@ -3,6 +3,7 @@ package megasena;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +21,7 @@ public class Sorteio {
             FileReader arq = new FileReader(nomeArqSorteio);
             BufferedReader lerArq = new BufferedReader(arq);
             this.sorteio = Arrays.asList(lerArq.readLine().split(" "));
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.err.printf("Erro na abertura do arquivo: %s.\n", e.getMessage());
         }
     }
